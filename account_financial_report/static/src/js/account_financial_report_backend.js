@@ -9,7 +9,7 @@ odoo.define('account_financial_report.account_financial_report_backend', functio
     );
 
 
-    var report_backend = Widget.extend(ControlPanelMixin, {
+    var report_backend = Widget.extend({}, {
         // Stores all the parameters of the action.
         events: {
             'click .o_account_financial_reports_print': 'print',
